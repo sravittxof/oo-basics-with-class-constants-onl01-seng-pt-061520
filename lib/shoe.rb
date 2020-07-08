@@ -16,10 +16,5 @@ class Shoe
   end
 
   BRANDS = []
-  
-  if BRANDS.include?(@brand) == false
-    BRANDS << @brand
-  end
-  
 
 end
