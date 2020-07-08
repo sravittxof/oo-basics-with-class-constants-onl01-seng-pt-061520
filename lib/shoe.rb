@@ -4,6 +4,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
+      
+    if BRANDS.include?(@brand) == false
+      BRANDS << @brand
+    end
+    
   end
 
   def cobble
@@ -11,13 +16,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def track_brands
-    if BRANDS.include?(@brand) == false
-      BRANDS << @brand
-    end
-  end
-
   BRANDS = []
-
 
 end
