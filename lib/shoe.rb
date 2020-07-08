@@ -11,7 +11,7 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  def track_brands(@brand)
+  def track_brands
     if BRANDS.include?(@brand) == false
       BRANDS << @brand
     end
